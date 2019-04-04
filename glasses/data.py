@@ -5,7 +5,7 @@ import warp
 
 # load data
 def load(opt,test=False):
-	path = "dataset"
+	path = opt.path
 	if test:
 		images = np.load("{0}/image_test.npy".format(path))
 		hasGlasses = np.load("{0}/attribute_test.npy".format(path))[:,15]

@@ -8,6 +8,7 @@ def set(training):
 	parser = argparse.ArgumentParser()
 
 	parser.add_argument("--group",					default="0",			help="name for group")
+	parser.add_argument("--path",					default="dataset",		help="datasetPath")
 	parser.add_argument("--name",					default="test",			help="name for model instance")
 	parser.add_argument("--loadGP",					default=None,			help="load pretrained model (GP)")
 	parser.add_argument("--size",					default="144x144",		help="resolution of background image")
